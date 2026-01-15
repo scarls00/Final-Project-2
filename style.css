@@ -112,3 +112,21 @@ main {
 
 
 /*About Section*/
+
+.container__about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.row--about {
+    border: 10px solid purple;
+    font-size: 265%;;
+}
+
+.about__img {
+    border: 10px solid purple;
+    font-size: 30%;
+}
