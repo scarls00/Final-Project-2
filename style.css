@@ -124,23 +124,26 @@ main {
 
 .container__about {
     display: flex;
-    align-items: center;
+    gap: 32px;
     justify-content: space-between;
     margin-top: 40px;
     padding: 20px;
-    width: 40%;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row--about {
-    border: 10px solid purple;
     width: 40%;
-    font-size: 10px;
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 .about__img {
-    border: 10px solid purple;
     width: 60%;
-    font-size: 10px;
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 .about__img img {
