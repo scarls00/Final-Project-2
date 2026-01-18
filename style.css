@@ -32,7 +32,7 @@ body {
 }
 
 .purple {
-    color: purple !important;
+    color: #6415ff !important;
 }   
 
 img {
@@ -74,7 +74,7 @@ main {
     gap: 10px;
     font-size: 48px;
     font-weight: bold;
-    color: purple;
+    color: #6415ff;
     text-decoration: none;
 }
 
@@ -111,11 +111,11 @@ main {
 
 .nav__link--anchor:hover {
     cursor: pointer;
-    color: purple;
+    color: #6415ff;
     background-color: #f0e6ff;
 }
 .nav__link--button {
-    background-color: purple;
+    background-color: #6415ff;
     color: white;
     font-size: 20px;
     padding: 10px 32px;
@@ -300,10 +300,12 @@ input {
     gap: 32px;
     justify-content: space-between;
     margin-top: 40px;
-    padding: 20px;
+    padding: 40px;
+    border: 40px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .row--professionals {
@@ -332,11 +334,11 @@ input {
 
 .professionals__anchor:hover {
     cursor: pointer;
-    color: purple;
+    color: #6415ff;
     background-color: #f0e6ff;
 }
 .professionals__button {
-    background-color: purple;
+    background-color: #6415ff;
     color: white;
     font-size: 10px;
     padding: 10px 32px;
@@ -344,3 +346,59 @@ input {
     border-radius: auto;
     transition: all 0.3s ease;
     }
+
+    /* Steps */
+.container__steps {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row--steps {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.row--steps h4 {
+    margin-bottom: 8px;
+}
+
+.row__steps row {
+        align-items: center;
+}
+
+.steps__img {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.steps__img img {
+    width: 100%;
+    height: auto;
+}
+
+.step__title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.step__number {
+    font-size: 26px;
+    font-weight: bold;
+    color: #6415ff;
+    margin-right: 20px;
+}
+
+.step__description {
+    font-size: 18px;
+    line-height: 1.4;
+}
