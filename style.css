@@ -175,7 +175,28 @@ Can't make it look right even copying :( */
     align-items: center;
 }
 
+.header__email--input {
+    width: 100%;
+    padding: 20px 192px 20px 32px;
+    border: 2px solid #e5e7eb;
+    border-radius: 500px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 300ms ease;
+    outline: none;
+}
+
+.header__email--input:hover {
+    border-color: ##cbd5e0;
+}
+
+.header__email--input:focus {
+    border-color: #6415ff;
+}
+
 .header__email--btn {
+    position: absolute;
+    right: 0;
     margin: 8px;
     height: calc(100% - 16px);
     border-radius: 500px;
@@ -188,57 +209,9 @@ Can't make it look right even copying :( */
     transition: all 300ms ease;
 }
 
-button {
-    appearance: auto;
-    text-rendering: auto;
-    color: buttontext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    cursor: default;
-    box-sizing: border-box;
-    background-color: buttonface;
-    margin: 0em 0em 0em 0em;
-    padding-block: 1px;
-    padding-inline: 6px;
-    border-width: 2px;
-    border-style: outset;
-}
-
-input {
-    text-rendering: auto;
-    color: fieldtext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    background-color: field;
-    margin: 0em 0em 0em 0em;
-    padding: 1px 0px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-    padding-block: 1px;
-}
-
-input {
-    overflow-clip-margin: 0px !important;
-    overflow: clip !important;
-    padding-block: 1px;
-    padding-inline: 2px;
+.header__email--btn:hover {
+    background-color: #5011cc;
+    cursor: pointer;
 }
 
 /* Features */
