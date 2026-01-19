@@ -636,8 +636,60 @@ Can't make it look right even copying :( */
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    align-self: center;
     }
+
 .pricing-personal__button:hover, .pricing-business__button:hover, .pricing-enterprise__button:hover {
     background-color: #5011cc;
     color: #fff;
+}
+
+.plan {
+    border: 5px solid #e5e7eb; margin: 26px;
+    border-radius: 4px;
+    padding: 24px;
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: center;
+}
+.plan__top {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    padding: 20px 24px;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.plan__middle {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    padding: 20px 24px;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.plan__bottom {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    padding: 20px 24px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #718096;
+    line-height: 1.5;
+    text-align:center;
 }
