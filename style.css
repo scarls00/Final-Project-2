@@ -45,6 +45,11 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 80px;
+
 }   
 /* Navigation Bar */
 
@@ -223,6 +228,58 @@ Can't make it look right even copying :( */
     margin-bottom: 40px;
 }
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    width: calc(100% / 3);
+}
+
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature__img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.feature__text {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.feature__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243e63;
+    line-height: 1.25;
+}
+
+.feature__para {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #7c8ba1;
+    line-height: 1.625;
+}
+
 .container__features {
     margin-top: 60px;
     max-width: 1000px;
@@ -249,22 +306,50 @@ Can't make it look right even copying :( */
 .qualities__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 32px 24px;
 }
 
 .qualities__list--item {
     width: calc(100%/3);
     display: flex;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .qualities__list--img {
-    width: 175px;
-    height: 175px;
+    width: 56px;
+    height: 56px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualities__list--img img {
+    width: 24px;
+    height: 24px;
 }
 
 .qualities__list--description {
     font-size: 24px;
     margin-bottom: 10px;
-    }
+}
+
+.qualities__list--description h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243e63;
+    line-height: 1.25;
+}
+
+.qualities__list--description p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #7c8ba1;
+    line-height: 1.625;
+}
 
 /* Professionals */
 
@@ -313,14 +398,16 @@ Can't make it look right even copying :( */
 .professionals__button {
     background-color: #6415ff;
     color: white;
-    font-size: 10px;
-    padding: 10px 32px;
+    font-size: 14px;
+    padding: 10px 24px;
     border: none;
-    border-radius: auto;
+    border-radius: 9999px;
     transition: all 0.3s ease;
+    line-height: 1;
+    margin-top: 24px;
     }
 
-    /* Steps */
+/* Steps */
 .container__steps {
     display: flex;
     gap: 32px;
