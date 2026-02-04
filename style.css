@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
@@ -605,6 +609,7 @@ Can't make it look right even copying :( */
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 .row--pricing {
     width: 50%;
     font-size: 18px;
@@ -642,6 +647,22 @@ Can't make it look right even copying :( */
 .pricing-personal__button:hover, .pricing-business__button:hover, .pricing-enterprise__button:hover {
     background-color: #5011cc;
     color: #fff;
+}
+
+.pricing-personal__button {
+    background-color: rgb(56, 178, 172);
+}
+
+.pricing-enterprise__button {  
+   background-color: rgb(245, 101, 101);
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .plan {
@@ -692,4 +713,86 @@ Can't make it look right even copying :( */
     color: #718096;
     line-height: 1.5;
     text-align:center;
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+    box-sizing: border-box;
+    display: block;
+}
+
+.container__testimonials container {
+    display: flex;
+    flex-wrap: wrap;
+       gap: 32px;
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row--testimonials {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.row__testimonials row {
+        align-items: center;
+}
+
+.testimonial-img {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.testimonial-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* START */
+
+.container__start container {
+
+}
+
+.start__button, .contact__button {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.start__button:hover, .contact__button:hover {
+    cursor: pointer;
+    color: #6415ff;
+    background-color: #f0e6ff;
+}
+.start__button, .contact__button {
+    background-color: #6415ff;
+    color: white;
+    font-size: 14px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    transition: all 0.3s ease;
+    line-height: 1;
+    margin-top: 32px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    }
+.start__button:hover {
+    background-color: #5011cc;
+    color: #fff;
+}
+
+ .contact__button {
+    background-color: rgb(245, 101, 101);
 }
