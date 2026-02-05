@@ -796,3 +796,25 @@ Can't make it look right even copying :( */
  .contact__button {
     background-color: rgb(245, 101, 101);
 }
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #rgb(100, 21, 255);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__column--link {
+    display: flex;
+    gap: 16px;
+}
+
