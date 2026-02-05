@@ -807,7 +807,8 @@ Can't make it look right even copying :( */
 
 /* FOOTER */
 
-.footer {
+.container__footer container {
+    border-box-sizing: border-box;
     background-color: rgb(100, 21, 255);
     padding: 40px 20px;
     text-align: center;
@@ -817,11 +818,16 @@ Can't make it look right even copying :( */
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.footer__column--link {
+.footer__column--link:hover {
+    color: #f0e6ff;
+}
+
+.footer__left {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
+    align-items: flex-end;
 }
-
