@@ -597,6 +597,10 @@ Can't make it look right even copying :( */
 
 /* PRICING */
 
+#pricing h2, h4, p {
+    text-align: center;
+}
+
 .container__pricing container {
     display: flex;
     gap: 32px;
@@ -628,6 +632,12 @@ Can't make it look right even copying :( */
     color: #6415ff;
     background-color: #f0e6ff;
 }
+
+.plan__middle {
+    background-color: #6415ff;;
+
+}
+
 .pricing-personal__button, .pricing-business__button, .pricing-enterprise__button {
     background-color: #6415ff;
     color: white;
@@ -807,11 +817,12 @@ Can't make it look right even copying :( */
 
 /* FOOTER */
 
-.container__footer container {
-    border-box-sizing: border-box;
-    background-color: rgb(100, 21, 255);
-    padding: 40px 20px;
-    text-align: center;
+footer {
+padding: 96px 32px;
+background-color: rgb(100, 21, 255);
+margin-bottom: -32px;
+position: relative;
+overflow: hidden;
 }
 
 .footer__column {
@@ -821,8 +832,13 @@ Can't make it look right even copying :( */
     justify-content: space-around;
 }
 
-.footer__column--link:hover {
+.footer__column--title, .footer__column--link, .footer__bottom--text, .footer__bottom p {
+    font-size: 20px;
     color: #f0e6ff;
+}
+
+.footer__column--link:hover {
+    text-decoration-line: underline;
 }
 
 .footer__left {
