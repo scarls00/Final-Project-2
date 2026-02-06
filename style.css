@@ -559,11 +559,12 @@ Can't make it look right even copying :( */
 }
 
 .values__img img {
-        height: auto;
+    height: auto;
 }
 
 .aff-pro {
     margin: 10px 5px;
+    display: flex;  
 }
 
 .aff-pro h2 { 
