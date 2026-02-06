@@ -597,27 +597,23 @@ Can't make it look right even copying :( */
 
 /* PRICING */
 
-#pricing h2, h4, p {
+.pricing h1, h4, p {
     text-align: center;
 }
 
 .container__pricing container {
     display: flex;
-    gap: 32px;
-    justify-content: space-between;
-    margin-top: 40px;
-    padding: 40px;
-    border: 40px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row--pricing {
-    width: 50%;
-    font-size: 18px;
-    line-height: 1.4;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }   
 
 .pricing__anchor:not(.pricing__button) {
@@ -669,24 +665,37 @@ Can't make it look right even copying :( */
 
 .plans {
     display: flex;
+    width: 100%;
     justify-content: center;
-    align-items: stretch;
     gap: 24px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .plan {
-    border: 5px solid #e5e7eb; margin: 26px;
-    border-radius: 4px;
-    padding: 24px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    border: 1px solid #e5e7eb; 
+    margin: 0;
+    border-radius: 8px;
+    background: #fff;
     width: calc(100%/3);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 16px;
+    align-items: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);   
 }
+
+.plan__stripe {
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(to right, #6415ff 0%, #a15bf9 100%);
+}
+
 .plan__top {
     width: calc(100% + 48px);
     margin-left: -24px;
