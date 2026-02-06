@@ -534,6 +534,10 @@ Can't make it look right even copying :( */
 
 /* VALUES */
 
+.container__values {
+    display: flex;
+}
+
 .row--values row {
     width: 100%;
     border: 40px;
@@ -555,8 +559,7 @@ Can't make it look right even copying :( */
 }
 
 .values__img img {
-    width: 50%;
-    height: auto;
+        height: auto;
 }
 
 .aff-pro {
