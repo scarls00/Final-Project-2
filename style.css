@@ -534,22 +534,18 @@ Can't make it look right even copying :( */
 
 /* VALUES */
 
-.container__values {
+.container--values {
     display: flex;
 }
 
-.row--values row {
+.row--values {
     width: 100%;
     border: 40px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.row--values {
-    width: 50%;
-    font-size: 18px;
-    line-height: 1.4;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .values__img {
