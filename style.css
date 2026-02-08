@@ -445,12 +445,14 @@ nav {
     text-decoration: none;
     cursor: pointer;
     }
+
 .professionals__button:hover {
     background-color: #5011cc;
     color: #fff;
 }
 
 /* STEPS */
+
 .container__steps {
     display: flex;
     gap: 32px;
@@ -461,14 +463,20 @@ nav {
     margin: 0 auto;
 }
 
+.row--steps row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .row--steps {
     width: 50%;
     font-size: 18px;
     line-height: 1.4;
 }
 
-.row__steps row {
-        align-items: center;
+.row--steps h2 {
+    text-align: left;
 }
 
 .steps__img {
@@ -487,19 +495,22 @@ nav {
     flex-direction: column;
     gap: 24px;
 }
+
 .steps__list {
     display: flex;
     align-items: flex-start;
     gap: 16px;
 }
+
 .step {
     display: flex;
     align-items: flex-start;
     gap: 16px;
 }
+
 .step__title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color: #243e63;
     line-height: 1;
     margin-bottom: 4px;
@@ -508,7 +519,7 @@ nav {
 .step__number {
     color: #cbd5e0;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1;
     margin-right: 20px;
 }
@@ -528,12 +539,49 @@ nav {
     margin-top: 12px;
     font-weight: 500;
     line-height: 2;
+    text-align: left;
 }
 
 /* VALUES */
 
 .container--values {
     display: flex;
+    max-width: 1200px;
+}
+
+.values__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#values .row, #testimonials .row{
+    flex-wrap: nowrap;
+}
+
+.value__title--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.value__img--wrapper {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
 }
 
 .row--values {
@@ -550,6 +598,10 @@ nav {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+}
+
+.values__list {
+    display: flex;
 }
 
 .values__img img {
@@ -582,6 +634,7 @@ nav {
     color: #6415ff;
     background-color: #f0e6ff;
 }
+
 .values__button {
     background-color: #6415ff;
     color: white;
@@ -612,6 +665,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
 }
 
 .row--pricing {
@@ -636,12 +690,30 @@ nav {
     background-color: #f0e6ff;
 }
 
-.plan__middle {
-    background-color: #6415ff;;
-
+.plan--highlighted .plan__feature,
+.plan--highlighted .plan__price,
+.plan--highlighted .plan__per,
+.plan--highlighted .plan__target {
+    color: white;
 }
 
-.pricing-personal__button, .pricing-business__button, .pricing-enterprise__button {
+.plan--highlighted.plan {
+  background: linear-gradient(135deg,rgb(76, 81, 191) 0%,rgb(102, 126, 234) 100%);
+}
+
+.plan--highlighted .pricing-business__button {
+    background-color: #fff;
+    color: #6415ff;
+}
+
+.pricing__anchor {
+    border-radius: 9999px;
+    width: 50%;
+}
+
+.pricing-personal__button, 
+.pricing-business__button, 
+.pricing-enterprise__button {
     background-color: #6415ff;
     color: white;
     font-size: 14px;
@@ -650,14 +722,16 @@ nav {
     border-radius: 500px;
     transition: all 0.3s ease;
     line-height: 1;
-    margin-top: 32px;
+    margin: 16px 0;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
     align-self: center;
     }
 
-.pricing-personal__button:hover, .pricing-business__button:hover, .pricing-enterprise__button:hover {
+.pricing-personal__button:hover, 
+.pricing-business__button:hover, 
+.pricing-enterprise__button:hover {
     background-color: #5011cc;
     color: #fff;
 }
@@ -700,7 +774,18 @@ nav {
 .plan__stripe {
     height: 8px;
     width: 100%;
-    background: linear-gradient(to right, #6415ff 0%, #a15bf9 100%);
+}
+
+.plan--personal 
+.plan__stripe
+.pricing-personal__button {
+  background: linear-gradient(115deg,rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan--enterprise 
+.plan__stripe,
+.pricing-enterprise__button {
+  background: linear-gradient(115deg,rgb(245, 101, 101) 0%,rgb(254, 178, 178) 100%);
 }
 
 .plan__top {
@@ -719,11 +804,14 @@ nav {
     gap: 16px;
 }
 
+.plan__middle {
+    border-bottom: 2px solid #e2e8f0;
+}
+
 .plan__feature {
     margin-top: 20px;
     font-size: 24px;
     font-weight: 500;
-    color: #718096;
     line-height: 1.5;
     text-align:center;
 }
@@ -738,7 +826,7 @@ nav {
 .container__testimonials container {
     display: flex;
     flex-wrap: wrap;
-       gap: 32px;
+    gap: 32px;
     margin-top: 40px;
     padding: 20px;
     max-width: 1200px;
