@@ -25,7 +25,6 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
 }
 
 .container {
@@ -50,18 +49,21 @@ main {
 
 section {
     margin-bottom: 80px;
-
 }   
+
 /* Navigation Bar */
 
 nav {
     height: 100%;
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.section__para, .plan__feature {
+    color: #7c8ba1;
 }
 
 .row {
@@ -69,9 +71,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-    
+    flex-wrap: wrap; 
 }
 
 .nav__logo {
@@ -138,7 +138,7 @@ nav {
     justify-content: space-between;
     margin-top: 40px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -149,7 +149,6 @@ nav {
     font-size: 18px;
     line-height: 1.4;
 }
-
 
 .logo__img {
     width: 100%;
@@ -168,8 +167,7 @@ nav {
     height: auto;
 }
 
-/* Email Copied from original per instructions
-Can't make it look right even copying :( */
+/* Email Copied from original's inspect per instructions, it's way too advanced for me :( */
 
 .header__email {
     width: 100%;
@@ -220,7 +218,7 @@ Can't make it look right even copying :( */
     cursor: pointer;
 }
 
-/* Features */
+/* FEATURES */
 
 #features .row {
     display: flex;
@@ -283,7 +281,7 @@ Can't make it look right even copying :( */
 
 .container__features {
     margin-top: 60px;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -332,7 +330,7 @@ Can't make it look right even copying :( */
     margin: 0 auto;
 }
 
-/* Quality */
+/* QUALITY */
 
 .row--quality {
     display: flex;
@@ -389,7 +387,7 @@ Can't make it look right even copying :( */
     line-height: 1.625;
 }
 
-/* Professionals */
+/* PROFESSIONALS */
 
 .container__professionals {
     display: flex;
@@ -452,7 +450,7 @@ Can't make it look right even copying :( */
     color: #fff;
 }
 
-/* Steps */
+/* STEPS */
 .container__steps {
     display: flex;
     gap: 32px;
@@ -543,7 +541,7 @@ Can't make it look right even copying :( */
     border: 40px;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
