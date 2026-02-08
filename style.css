@@ -1060,3 +1060,80 @@ overflow: hidden;
     display: flex;
     gap: 12px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .row--testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__img, .testimonials__right {
+        width: 100%;
+    }
+
+    .testimonial__bottom {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__about, .container__professionals, .container__steps, .row--values {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row--about, .about__img, .row--professionals, .professionals__img, .row--steps row, .steps__img, .row--values {
+        width: 100%;
+    }
+
+    .values__img, .values__list, .row--values {
+        width: 100%;
+    }
+}       
+
+@media (max-width: 480px) {
+    .nav__links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #about, .container__about.container, .row--about, #professionals .row--professionals, #steps .row--steps row, #values .row--values {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .values__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__link--anchor, .nav__link--button, .professionals__anchor:not(.professionals__button), .professionals__button, .values__anchor:not(.values__button), .values__button, .pricing__anchor:not(.pricing__button), .pricing-personal__button, .pricing-business__button, .pricing-enterprise__button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    #testimonials .row--testimonials,  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__features, .container__testimonials, .container__pricing, .container__start, .container--values, .container__about, .container__professionals, .container__steps, .row--values {
+        padding: 0 16px;
+    }
+
+    .features__heading, .section__title {
+        font-size: 28px;
+    }
+
+    .feature__row, .features, .feature, .row--features row, .qualities__list--item, .value__title--wrapper, .plan, .testimonial__bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
