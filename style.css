@@ -140,7 +140,6 @@ nav {
     cursor: pointer;
     color: #6415ff;
     display: none;
-    text-decoration: none;
 }
 
 .menu__backdrop {
@@ -1364,6 +1363,26 @@ overflow: hidden;
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    #footer .container__footer, .row--footer, .footer__column, .footer__left, .footer__links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__column {
+        margin-bottom: 60px;
+        text-align:center;
+    }
+
+    .footer__bottom p {
+        flex-direction: row;
+        margin-left: 20px;
+        text-align: center;
     }
 
 }
