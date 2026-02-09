@@ -1230,6 +1230,19 @@ overflow: hidden;
 
     .btn__menu {
         display: block;
+        padding: 0 24px;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }
+
+    .h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
     }
 } 
 
