@@ -231,6 +231,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+    justify-content: center;
 }
 
 .feature {
@@ -406,6 +407,7 @@ nav {
     width: 50%;
     font-size: 18px;
     line-height: 1.4;
+    margin-bottom: 40px;
 }
 
 .professionals__img {
@@ -483,6 +485,7 @@ nav {
     width: 50%;
     font-size: 18px;
     line-height: 1.4;
+    margin-bottom: 40px;
 }
 
 .steps__img img {
@@ -573,6 +576,9 @@ nav {
 
 #values .row, #testimonials .row{
     flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .value__title--wrapper {
@@ -1079,10 +1085,115 @@ overflow: hidden;
     }
 }
 
+@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        @media (max-width: 768px) {
+            @media (max-width: 480px) {
+                .feature__row, .features, .feature, .row--features row, .qualities__list--item, .value__title--wrapper, .plan, .testimonial__bottom {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        @media (max-width: 768px) {
+            @media (max-width: 768px) {
+                .feature {
+                    width: auto;
+                    max-width: 384px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        @media (max-width: 768px) {
+            .feature, .step__description, .qualities__list--description, .value__title--wrapper, .plan, .testimonial__bottom {
+                width: auto;
+                max-width: 384px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .quality__description, .steps__description, .values__description, .testimonials__description {
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
+        width: 100%;
+        max-width: 448px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        @media (max-width: 768px) {
+            .feature, .step__description, .qualities__list--description, .value__title--wrapper, .plan, .testimonial__bottom {
+                width: auto;
+                max-width: 384px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        @media (max-width: 768px) {
+            .feature, .step__description, .qualities__list--description, .value__title--wrapper, .plan, .testimonial__bottom {
+                width: auto;
+                max-width: 384px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) { 
+    .nav__links {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
+        .feature, .step__description, .qualities__list--description, .value__title--wrapper, .plan, .testimonial__bottom {
+            width: auto;
+            max-width: 384px;
+        }
+
+
 @media (max-width: 768px) {
     .container__about, .container__professionals, .container__steps, .row--values {
         flex-direction: column;
         align-items: center;
+    }
+
+    .feature {
+        width: auto;
+        max-width: 384px;
+    }
+
+    .div.feature__text, h2.feature__title, p.feature__para {
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 16px;
     }
 
     .row--about, .about__img, .row--professionals, .professionals__img, .row--steps row, .steps__img, .row--values {
@@ -1096,6 +1207,8 @@ overflow: hidden;
         text-align: center;
         width: 100%;
     }
+
+
 }       
 
 @media (max-width: 480px) {
@@ -1156,8 +1269,7 @@ overflow: hidden;
         margin-bottom: 20px;
         }
 
-    .contact__button, .start__button, .pricing-personal__button, .pricing-business__button, .pricing-enterprise__button {
-        flex-direction: column;
+    .container__start {
         flex-wrap: wrap;
         max-height: 50%;
     }
