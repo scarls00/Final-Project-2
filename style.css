@@ -930,7 +930,7 @@ nav {
 }
 
 .testimonials__title, 
-.testimonials__heading, 
+.testimonials__heading, .testimonials-rating
 h4, p {
     text-align: left;
     margin-bottom: 20px;
@@ -939,6 +939,7 @@ h4, p {
 .testimonials__heading {
     text-align: left;
     padding: 0 16px;
+    text-align: center;
 }
 
 .row--testimonials .row {
@@ -972,6 +973,9 @@ h4, p {
 
 .testimonials__right {
     width: 48%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .testimonial__button {
@@ -1265,7 +1269,7 @@ overflow: hidden;
         max-width: 384px;
     }
 
-    .div.feature__text, h2.feature__title, p.feature__para, .testimonials-heading, .testimonials-rating, .testimonial__title, .testimonial__para {
+    .div.feature__text, h2.feature__title, p.feature__para, .testimonials-heading, .testimonial__title, .testimonial__para {
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
@@ -1289,6 +1293,13 @@ overflow: hidden;
         display: flex;
         justify-content: space-between;
     }
+
+    .testimonials__title, 
+    .testimonials__heading, .testimonials-rating,
+    h4, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
 }       
 
 @media (max-width: 768px) {
