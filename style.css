@@ -1090,6 +1090,10 @@ overflow: hidden;
     }
 
     .values__img, .values__list, .row--values {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
         width: 100%;
     }
 }       
@@ -1106,9 +1110,12 @@ overflow: hidden;
         text-align: center;
     }
 
-    .values__list {
+    .values__img, .values__list, .row--values {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .nav__link--anchor, .nav__link--button, .professionals__anchor:not(.professionals__button), .professionals__button, .values__anchor:not(.values__button), .values__button, .pricing__anchor:not(.pricing__button), .pricing-personal__button, .pricing-business__button, .pricing-enterprise__button {
@@ -1116,7 +1123,7 @@ overflow: hidden;
         padding: 8px 12px;
     }
 
-    #testimonials .row--testimonials,  {
+    #testimonials .row--testimonials {
         flex-direction: column;
         align-items: center;
     }
@@ -1127,12 +1134,41 @@ overflow: hidden;
 
     .features__heading, .section__title {
         font-size: 28px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .feature__row, .features, .feature, .row--features row, .qualities__list--item, .value__title--wrapper, .plan, .testimonial__bottom {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
+    }
+
+    .p, h1, h2, h4, .footer, .section__para, .plan__feature, .values__list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+        }
+
+    .contact__button, .start__button, .pricing-personal__button, .pricing-business__button, .pricing-enterprise__button {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 50%;
+    }
+
+    .buttons, .button {
+        font-size: 16px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
 }
