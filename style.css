@@ -930,7 +930,7 @@ nav {
 }
 
 .testimonials__title, 
-.testimonials__heading, .testimonials-rating
+.testimonials__heading, .testimonial-rating
 h4, p {
     text-align: left;
     margin-bottom: 20px;
@@ -1289,13 +1289,13 @@ overflow: hidden;
         width: 100%;
     }
 
-    #testimonials testimonials__bottom {
+    .testimonial__bottom {
         display: flex;
         justify-content: space-between;
     }
 
     .testimonials__title, 
-    .testimonials__heading, .testimonials-rating,
+    .testimonials__heading, .testimonial-rating,
     h4, p {
     text-align: center;
     margin-bottom: 20px;
@@ -1340,7 +1340,16 @@ overflow: hidden;
         width: 100%;
     }
 
-    .feature__row, .features, .feature, .row--features row, .qualities__list--item, .value__title--wrapper, .plan, .testimonial__bottom {
+    .feature__row, .features, .feature, .row--features row, .qualities__list--item, .value__title--wrapper, .plan, .testimonial__profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .testimonial__bottom {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
