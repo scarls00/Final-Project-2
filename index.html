@@ -28,34 +28,34 @@
             <li><a href="#signup" class="nav__link--button nav__link--anchor link__hover-effect link__hover-effect--black">Sign Up</a>
             </li> 
         </ul>
-      </div>
-      <button class="btn__menu">
+      <button class="btn__menu" onclick="openMenu()">
         <i class="fa-solid fa-bars"></i>
       </button>
       <div class="menu__backdrop">
-        <button class="btn__menu btn__menu--close">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
           <i class="fas fa-times"></i>
         </button>
         <ul class="menu__links">
           <li class="menu__list">
-            <a href="#about" class="menu__link">About</a>
+            <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
           </li>
           <li class="menu__list">
-            <a class="menu__link no-cursor">Blog</a>
+            <a class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
           </li>
           <li class="menu__list">
-            <a href="#pricing" class="menu__link">Pricing</a>
+            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
           </li>
           <li class="menu__list">
-            <a href="#start" class="menu__link">Contact us</a>
+            <a href="#start" class="menu__link" onclick="closeMenu()">Contact us</a>
           </li>
           <li class="menu__list">
-            <a class="menu__link no-cursor">Login</a>
+            <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
           </li>
           <li class="menu__list">
-            <a href="#header__email" class="menu__link">Sign Up</a>
+            <a href="#header__email" class="menu__link" onclick="closeMenu()">Sign Up</a>
           </li>
         </ul>
+       </div>
       </div>
     </nav>
    </section>
