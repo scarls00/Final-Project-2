@@ -1291,7 +1291,11 @@ overflow: hidden;
 
     .testimonial__bottom {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .testimonial__profile {
+        margin: 0 auto;
     }
 
     .testimonials__title, 
