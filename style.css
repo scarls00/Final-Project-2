@@ -1267,6 +1267,7 @@ overflow: hidden;
 } 
 
 
+
 @media (max-width: 768px) {
     .quality__description, .steps__description, 
     .values__description, .testimonials__description {
@@ -1328,18 +1329,23 @@ overflow: hidden;
     h4, p {
     text-align: center;
     margin-bottom: 20px;
+    }
 
-    #about, #about h1, 
-    #about p, .container__about.container, .row--about, 
+    .row--about, #about, #about h1, 
+    #about p, .container__about.container, 
     #professionals .row--professionals, 
     #steps .row--steps row, 
     #values .row--values {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
 
     .values__img, .values__list, .row--values, 
+    .values__description,
+    .value__title--wrapper,
     #values h4, #values p {
         flex-wrap: wrap;
         flex-direction: column;
@@ -1446,7 +1452,7 @@ overflow: hidden;
     width: 100%;
     max-width: 1280px;
     margin: 20px;
-}
+
     }
 
     .footer__bottom p {
@@ -1469,8 +1475,7 @@ overflow: hidden;
     }
 }
 
-@media (max-width: 420) {
-        .testimonial__bottom {
+@media (max-width: 420px) {
         display: flex;
         flex-direction: column;
         align-items: space-evenly;
@@ -1478,4 +1483,27 @@ overflow: hidden;
         width: 100%;
         margin: 0 auto;
     }
-}
+
+    #about, #about h1, 
+    #about p, .container__about.container, 
+    #professionals .row--professionals, 
+    #steps .row--steps row, #steps .row--about, 
+    #steps section__tag, .section__title,
+    #values .row--values {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .values__img, .values__list, .row--values, 
+    .values__description,
+    .value__title--wrapper,
+    #values h4, #values p {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
