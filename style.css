@@ -303,7 +303,7 @@ nav {
 .feature__row {
     display: flex;
     align-items: flex-start;
-    padding: 32px 24px;
+    padding: 20px 24px;
 }
 
 .feature__img--wrapper {
@@ -905,7 +905,7 @@ nav {
     padding: 16px;
 }
 
-#testimonials testimonials__img {
+#testimonials .testimonials__img {
     margin-bottom: 40px;
 }
 
@@ -918,6 +918,12 @@ nav {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+
+.testimonial__description--left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .fa-solid.fa-star {
@@ -971,7 +977,6 @@ h4, p {
     width: 48%;
     display: flex;
     flex-direction: column;
-
 }
 
 .testimonial__button {
@@ -985,6 +990,7 @@ h4, p {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    width: 100%;
 }
 
 .testimonial-img {
@@ -1295,6 +1301,28 @@ overflow: hidden;
         max-width: 384px;
     }
 
+    .row--steps {
+        justify-content: center;
+    }
+
+    #steps .section__title {
+        text-align: center;
+    }
+
+    .step, .steps__para {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step__number {
+        margin-right: 0;
+    }
+
+    .step__description {
+        margin-left: 0;
+    }
+
     .div.feature__text, h2.feature__title, 
     p.feature__para, .testimonials-heading, 
     .testimonial__title, .testimonial__para {
@@ -1306,7 +1334,7 @@ overflow: hidden;
     }
 
     .row--about, .about__img, .row--professionals, 
-    .professionals__img, .row--steps row, 
+    .professionals__img, .row--steps .row, 
     .steps__img, .row--values {
         width: 100%;
     }
@@ -1398,7 +1426,7 @@ overflow: hidden;
     .testimonial__bottom {
         display: flex;
         flex-direction: column;
-        align-items: space-evenly;
+        align-items: center;
         text-align: center;
         width: 100%;
         margin: 0 auto;
@@ -1442,17 +1470,23 @@ overflow: hidden;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 25%;
     }
 
     .row--footer {
         flex-direction: row;
+        justify-content: center;
+        gap: 24px;
     }
 
-    .footer__column, .row {
-    width: 100%;
-    max-width: 1280px;
-    margin: 20px;
+    .row {
+        width:100%
+    }
 
+    .footer__column {
+    margin-bottom: 60px;
+    text-align: center;
+    margin: 0 20px 60px;
     }
 
     .footer__bottom p {
@@ -1467,34 +1501,48 @@ overflow: hidden;
 
     .footer__bottom {
         flex-direction: column;
-
     }
+    
     .footer__links {
         flex-direction: row;
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 420px) {
-        display: flex;
-        flex-direction: column;
-        align-items: space-evenly;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
+@media(max-width: 420px) {
     #about, #about h1, 
     #about p, .container__about.container, 
     #professionals .row--professionals, 
-    #steps .row--steps row, #steps .row--about, 
-    #steps section__tag, .section__title,
+    #steps .row--steps .row, #steps .row--about, 
+    #steps .section__tag, .section__title,
     #values .row--values {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         text-align: center;
         width: 100%;
+    }
+
+    .row--steps {
+        justify-content: center;
+    }
+
+    #steps .section__title {
+        text-align: center;
+    }
+
+    .step, .steps__para {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step__number {
+        margin-right: 0;
+    }
+
+    .step__description {
+        margin-left: 0;
     }
 
     .values__img, .values__list, .row--values, 
@@ -1507,3 +1555,12 @@ overflow: hidden;
         text-align: center;
         width: 100%;
     }
+
+    .footer__links {
+        flex-direction: row;
+        flex-wrap: warp; 
+        align-items: center;
+        text-align: center;
+        width: 25%;
+    }
+}
