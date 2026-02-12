@@ -1464,7 +1464,7 @@ overflow: hidden;
 
     #footer .container__footer, 
     .row--footer, .footer__column, 
-    .footer__left, .footer__links {
+    .footer__left {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -1501,11 +1501,6 @@ overflow: hidden;
 
     .footer__bottom {
         flex-direction: column;
-    }
-    
-    .footer__links {
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 }
 
@@ -1558,9 +1553,6 @@ overflow: hidden;
 
     .footer__links {
         flex-direction: row;
-        flex-wrap: warp; 
-        align-items: center;
-        text-align: center;
-        width: 25%;
+        flex-wrap: wrap;
     }
 }
